@@ -1,0 +1,22 @@
+ Ver.10/6/12
+
+Control Axes: 
+	Left joysick up/down: move forwards/back  -  radius 2 deadzone
+	Left joystick left/right: strafe left/right  -  radius 2 deadzone
+	Right joystick up/down: arm up/down  -  radius 2 deadzone
+	Right joystick left/right: turn left/right  -  radius 2 deadzone
+	Right Dpad (Btn8 L): hold to activate turn lock  -  Robot will try to maintain its heading no matter what.
+	Left Dpad (Btn7 U): hold to shut down all motors if there are any fatal errors that are totally not the programmer's fault.
+	[TODO]right digital pad: arm presets
+	Notes:	All analog control surfaces scale quadratically
+		While enabled, the robot will apply power to maintain its arm position. DO NOT attempt to manually reposition arm.
+		For approximately 5 seconds after being powered on, the robot will initialize its gyroscope. DO NOT move the robot during this time.
+
+Sensor inputs/outputs:
+	LCD: Battery and status readout and [TODO]autonomous select
+	Arm potentiometer: read actual arm heights for [TODO]presets and autonomous
+	Right control potentiometer: fine control of arm position [TODO]during autonomous
+	gyro: hold heading when no turn is being applied by the driver.
+
+[TODO]Autonomous:
+	

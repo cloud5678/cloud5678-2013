@@ -1,0 +1,57 @@
+Cortex and joystick codes from:
+http://content.vexrobotics.com/docs/VEXnet_Cortex_UserGuide_081811.pdf
+(page 8)
+
+
+
+Power Expander:
+
+Green -- Battery Good
+Yellow -- Battery Low
+Red -- Battery Critical
+Slow Red Blink -- Circuit breaker is tripped
+Fast Green Blink -- Circuit breaker was tripped / Battery Good
+Fast Yellow Blink -- Circuit breaker was tripped / Battery Low - Charge soon
+Fast Red Blink -- Circuit breaker was tripped / Battery Critical - Charge Now
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+VEXnet
+Yellow Medium Blink -- Initialize  - Looking for PC or Tether Mate
+Yellow Blip -- Startup - Looking for USB Key
+Yellow Fast Blink -- Linking - Searching for VEXNet Mate
+Green Fast Blink -- Linked
+Green & Yellow Slow Blink -- Linked - Data quality reduced
+Green & Red Slow Blink -- Linked - Poor Data Quality reduced
+Green Solid -- Tethered to Mate or PC
+Red Blip -- Fault - Lost link - Searching for VEXnet Mate
+Green Slow Blink -- Downloading User Code [Does not apply to ROBOTC User Code Downloads]
+
+Robot
+Red -- Main Battery Dead (<5.5v) or CORTEX Off
+Yellow -- Main Battery Low  (<6.5v)
+Green -- Main Battery Good
+Solid -- All good, Both Joysticks connected
+Solid+1Blink -- All good, 1x1 Joystick connected
+Fast Blink -- Autonomous only mode
+Red Fast Blink -- Low Backup Battery
+Red Slow Blink -- Microprocessor Issue
+
+Game
+Green Solid -- Driver
+Green Fast Blink -- Autonomous
+Yellow Fast Blink -- Disabled
+
+Joystick
+Red -- Joystick Battery is Dead
+Yellow -- Joystick Battery is Low
+Green -- Joystick Battery is Good
+Fast Blink -- Two Joysticks in use
+Solid -- One Joystick in use
+
+Other
+Joystick	Robot	VEXnet	Game	Error
+RED	RED	RED	RED	Flash indicates Reset
+		SlowRED		No VEXnet Key
+	SlowRED			Invalid ID in CORTEX
+SlowRED				Invalid ID in Joystick

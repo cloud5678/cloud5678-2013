@@ -1,0 +1,14 @@
+Brain fuses:
+port 1-5: 4A shared
+port 6-10: 4A shared
+
+Power Expander fuses:
+port A-D: 4A shared
+
+Motor Controller fuses:
+4A each
+
+
+Motor specs:
+269: 0.18A(no load) - 2.6A(stall) (8.6in-lbs, 100rpm)
+393: 0.37A(no load) - 4.8A(stall) (9.2in-lbs, 160rpm / 14.76in-lbs, 100rpm)

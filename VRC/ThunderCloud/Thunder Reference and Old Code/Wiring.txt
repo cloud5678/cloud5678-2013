@@ -1,0 +1,20 @@
+MOTORS
+1-Backleft - 393HS
+2-A-Frontleft - 393HS
+3-armBottomLeft
+4-B-armTopLeft - 393
+5-empty
+6-empty
+7-armBottomRight
+8-C-armTopRight - 393
+9-D-Frontright - 393HS
+10-Backright - 393HS
+
+SENSORS
+1-[BUG]peBatteryInput
+2-armMeasure
+3-armSetPot
+4-gyro
+
+OTHER
+UART 1-LCD

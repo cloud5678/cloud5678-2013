@@ -1,0 +1,11 @@
+You can run 19 tasks + 1 main task simultaneously.
+All tasks should have a wait1Msec(x) line based on how often the need to run (CORTEX data rates below,  15-50 is sufficient for user control), 
+or else tasks will unnecessarily hog CPU time and may not execute properly.
+Alternatively, to solve this problem and still allow the task to run as often as possible, use AbortTimeSlice().
+A higher number is higher priority. Priority can be set when a task is started or later.
+
+Motors 2-9 update about every 20msec
+Motors 1,10 update every 1msec
+Motor control tasks do not need to run any more frequently than this
+
+More as it happens...

@@ -1,0 +1,17 @@
+CODE
+1. Add distance driving functionality with I2C encoders (and PID)
+2. Add arm presets
+3. Write autonomous for skills and competition
+4. Add LCD autonomous selector
+5. Determine bug in power expander status port
+6. Fix overflow in drive
+
+
+BUILD
+2. Expand bucket and intake (horizontal).
+3. Tighten everything
+4. Replace bad motor controller
+
+GENERAL
+1. Practice driving
+2. Make log book
