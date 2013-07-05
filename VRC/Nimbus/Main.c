@@ -38,32 +38,17 @@ const int lowArm = 0;
 volatile armSetpoint = lowArm;
 
 void lift(int liftPower) {
-    liftPower = -liftPower;
-    motor[liftLeft] = motor[liftRight] = liftPower;
-	  motor[liftLeft2] = motor[liftRight2] = liftPower;
+  liftPower = -liftPower;
+  motor[liftLeft] = motor[liftRight] = liftPower;
+  motor[liftLeft2] = motor[liftRight2] = liftPower;
 }
 
 void spin(int spinPower) {
-	int localSpinPower = spinPower;
-	motor[spinMotor] = motor[spinMotor2] = localSpinPower;
+  int localSpinPower = spinPower;
+  motor[spinMotor] = motor[spinMotor2] = localSpinPower;
 }
 
 void drive(int drivePower, int turn){
-
-  // Exp. Drive Code goes here
-  // Consider using scale of 0 to 1
-
-  /*float tF = drivePower == 128 ? 1 : drivePower / 127;
-  float tT = drivePower == 128 ? 1 : drivePower / 127;
-
-  float fF = 127 * tF * tF * (drivePower < 0 ? -1 : 1);
-  float fT = 127 * tT * tT * (turn < 0 ? -1 : 1);
-
-  motor[frontRight] = -fF + fT;
-  motor[backRight] = -fF + fT;
-  motor[frontLeft] = -fF - fT;
-  motor[backLeft] = -fF - fT;*/
-
   int leftDrivePower, rightDrivePower;
   leftDrivePower = (-drivePower)-turn;
   rightDrivePower = (-drivePower)+turn;
